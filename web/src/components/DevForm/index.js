@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-function DevForm(onSubmit) {
+function DevForm({ onSubmit }) {
 
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(
