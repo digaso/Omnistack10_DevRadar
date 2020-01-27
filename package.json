@@ -1,0 +1,30 @@
+{
+  "name": "Omnistack_week",
+  "version": "1.0.0",
+  "scripts": {
+    "commit": "git-cz"
+  },
+  "main": "index.js",
+  "repository": "https://github.com/digaso/Omnistack10_DevRadar.git",
+  "author": "--help <diogomoura2014@gmail.com>",
+  "license": "MIT",
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "dependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "commitizen": "^4.0.3",
+    "husky": "^4.2.1"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "3.0.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
