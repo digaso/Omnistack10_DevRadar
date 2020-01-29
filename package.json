@@ -1,16 +1,14 @@
 {
   "name": "Omnistack_week",
   "version": "1.0.0",
-  "scripts": {
-    "commit": "git-cz"
-  },
   "main": "index.js",
   "repository": "https://github.com/digaso/Omnistack10_DevRadar.git",
   "author": "--help <diogomoura2014@gmail.com>",
   "license": "MIT",
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
     }
   },
   "dependencies": {
